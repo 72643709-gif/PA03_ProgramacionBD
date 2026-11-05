@@ -163,9 +163,11 @@ La operación contempla:
 6. Descontar las cantidades correspondientes del stock.
 7. Confirmar la operación mediante COMMIT TRANSACTION.
 
-En caso de producirse un error o incumplirse alguna validación, se cancelarán los cambios mediante ROLLBACK TRANSACTION.
+Criterios de Confirmación (COMMIT) y Cancelación (ROLLBACK):
+En caso de producirse un error o incumplirse alguna validación en los pasos 1, 2 o 3, se cancelarán los cambios de inmediato mediante ROLLBACK TRANSACTION. De esta manera se evita que una venta quede registrada parcialmente o que se altere el stock de forma indebida. Solo si las validaciones se superan y las sentencias de modificación se ejecutan sin errores de sistema, se emite el COMMIT TRANSACTION, aplicando todos los cambios de forma definitiva y simultánea.
 
-De esta manera se evita que una venta quede registrada parcialmente.
+Justificación del Comportamiento Transaccional:
+Para este desarrollo se eligió una Transacción Explícita. A diferencia de la Transacción de Autoconfirmación, donde cada instrucción como un INSERT se confirma sola de forma aislada, y la Transacción Implícita, donde el sistema la inicia pero requiere cierre manual, la transacción explícita permite definir intencionalmente dónde empieza y dónde termina el bloque de operaciones. Es la única forma segura de agrupar múltiples operaciones que dependen entre sí como registrar una venta y descontar stock, esto asegura que se comporten como una única unidad lógica inquebrantable.
 
 ### Actividad 4: Pruebas comparativas y validación
 
