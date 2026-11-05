@@ -15,6 +15,7 @@
 1. Percy Astocahuana Buendía
 2. Nelson Amado Del Portal Neyra
 3. Luis Ángel Chávez Quispe
+4. Diego Fernando Martinez del Carpio
 
 ---
 
