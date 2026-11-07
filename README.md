@@ -302,7 +302,7 @@ Se incorporarán capturas de pantalla que demuestren la implementación y ejecuc
 
 ## 🎥 Video de exposición
 
-**Video público de YouTube:** [PEGAR AQUÍ EL ENLACE ACTUALIZADO DEL VIDEO DE PA3]
+**Video público de YouTube:https://youtu.be/kigdaBe14JA?si=HZJhq6g53d0U3--l 
 
 ---
 
