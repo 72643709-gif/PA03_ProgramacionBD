@@ -16,6 +16,7 @@
 2. Nelson Amado Del Portal Neyra
 3. Luis Ángel Chávez Quispe
 4. Diego Fernando Martinez del Carpio
+5. Gerson Alberto Pinto Leguia
 
 ---
 
